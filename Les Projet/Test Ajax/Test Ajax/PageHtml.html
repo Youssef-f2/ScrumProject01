@@ -1,0 +1,31 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax</title>
+</head>
+<body>
+    <button onclick="test()">Executer</button>
+    <h2>Test Ajax</h2>
+    <div id="dev"></div>
+    <script>
+        function test(){
+            var xhr= new XMLHttpRequest();
+            console.log("Avant open",xhr.readyState);
+            xhr.open('GET','fichier.txt',true);
+            console.log("Apres open",xhr.readyState);
+            xhr.onreadystatechange=function(){
+                console.log("Executer",xhr.readyState);
+                if(xhr.readyState){
+                    if (xhr.status == 200)
+                    {
+                        document.getElementById('dev').innerHTML = xhr.responseText;
+                    }
+                    
+                }
+            };
+            xhr.send();
+        }
+    </script>
+</body>
+</html>

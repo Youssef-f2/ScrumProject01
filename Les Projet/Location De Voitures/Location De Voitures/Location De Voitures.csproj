@@ -1,0 +1,570 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA6685EB-D118-4E91-9AC8-E96765D5F865}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Location_De_Voitures</RootNamespace>
+    <AssemblyName>Location De Voitures</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>iconfinder_app_type_rent_a_car_512px_GREY_287483.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AjouterLocateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterLocateur.Designer.cs">
+      <DependentUpon>AjouterLocateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterLocateur2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterLocateur2.Designer.cs">
+      <DependentUpon>AjouterLocateur2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterLocateurDansLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterLocateurDansLocation.Designer.cs">
+      <DependentUpon>AjouterLocateurDansLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterClient.Designer.cs">
+      <DependentUpon>AjouterClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterUtilisateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterUtilisateur.Designer.cs">
+      <DependentUpon>AjouterUtilisateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterVoiture2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterVoiture2.Designer.cs">
+      <DependentUpon>AjouterVoiture2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterVoiture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterVoiture.Designer.cs">
+      <DependentUpon>AjouterVoiture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChoisirLocateurForImpLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoisirLocateurForImpLocation.Designer.cs">
+      <DependentUpon>ChoisirLocateurForImpLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChoisirEntreDeuxDateLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoisirEntreDeuxDateLocation.Designer.cs">
+      <DependentUpon>ChoisirEntreDeuxDateLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChoisirParDateLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoisirParDateLocation.Designer.cs">
+      <DependentUpon>ChoisirParDateLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImpEntreDeuxDateLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImpEntreDeuxDateLocation.Designer.cs">
+      <DependentUpon>ImpEntreDeuxDateLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImpParDateLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImpParDateLocation.Designer.cs">
+      <DependentUpon>ImpParDateLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationEntreDeuxDateLocation.cs">
+      <DependentUpon>LocationEntreDeuxDateLocation.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="LocationParDateLocation.cs">
+      <DependentUpon>LocationParDateLocation.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ModifierDispoVoiture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifierDispoVoiture.Designer.cs">
+      <DependentUpon>ModifierDispoVoiture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChoisirVoitureForImpLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoisirVoitureForImpLocation.Designer.cs">
+      <DependentUpon>ChoisirVoitureForImpLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImpListeLocateurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImpListeLocateurs.Designer.cs">
+      <DependentUpon>ImpListeLocateurs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="imploc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>imploc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ImpVoitureForLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImpVoitureForLocation.Designer.cs">
+      <DependentUpon>ImpVoitureForLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImpressionLocationModifie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImpressionLocationModifie.Designer.cs">
+      <DependentUpon>ImpressionLocationModifie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImprimerLastLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImprimerLastLocation.Designer.cs">
+      <DependentUpon>ImprimerLastLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImpVoitureInDispo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImpVoitureInDispo.Designer.cs">
+      <DependentUpon>ImpVoitureInDispo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LastLoc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LastLoc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ImpListeVoitures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImpListeVoitures.Designer.cs">
+      <DependentUpon>ImpListeVoitures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListeLocateurs.cs">
+      <DependentUpon>ListeLocateurs.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ListeVoiture.cs">
+      <DependentUpon>ListeVoiture.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADM.Designer.cs">
+      <DependentUpon>ADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VoitureForLocation.cs">
+      <DependentUpon>VoitureForLocation.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="LocateurForLocation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocateurForLocation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Locateurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Locateurs.Designer.cs">
+      <DependentUpon>Locateurs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginOublie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginOublie.Designer.cs">
+      <DependentUpon>LoginOublie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyTools.cs" />
+    <Compile Include="ML2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ML2.Designer.cs">
+      <DependentUpon>ML2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NouvelleLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NouvelleLocation.Designer.cs">
+      <DependentUpon>NouvelleLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RechercherLocateurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RechercherLocateurs.Designer.cs">
+      <DependentUpon>RechercherLocateurs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifierLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifierLocation.Designer.cs">
+      <DependentUpon>ModifierLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImprimerLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImprimerLocation.Designer.cs">
+      <DependentUpon>ImprimerLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RechercherLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RechercherLocation.Designer.cs">
+      <DependentUpon>RechercherLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupprimerLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupprimerLocation.Designer.cs">
+      <DependentUpon>SupprimerLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RechercherVoiture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RechercherVoiture.Designer.cs">
+      <DependentUpon>RechercherVoiture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupprimerLocateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupprimerLocateur.Designer.cs">
+      <DependentUpon>SupprimerLocateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupprimerVoiture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupprimerVoiture.Designer.cs">
+      <DependentUpon>SupprimerVoiture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImpVoitureDispo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImpVoitureDispo.Designer.cs">
+      <DependentUpon>ImpVoitureDispo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImpLocateurForLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImpLocateurForLocation.Designer.cs">
+      <DependentUpon>ImpLocateurForLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserMenu.Designer.cs">
+      <DependentUpon>UserMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilisateurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilisateurs.Designer.cs">
+      <DependentUpon>Utilisateurs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VoitureInDispo.cs">
+      <DependentUpon>VoitureInDispo.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="VoitureDispo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VoitureDispo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Voitures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Voitures.Designer.cs">
+      <DependentUpon>Voitures.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AjouterLocateur.resx">
+      <DependentUpon>AjouterLocateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterLocateur2.resx">
+      <DependentUpon>AjouterLocateur2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterLocateurDansLocation.resx">
+      <DependentUpon>AjouterLocateurDansLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterClient.resx">
+      <DependentUpon>AjouterClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterUtilisateur.resx">
+      <DependentUpon>AjouterUtilisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterVoiture2.resx">
+      <DependentUpon>AjouterVoiture2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterVoiture.resx">
+      <DependentUpon>AjouterVoiture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoisirLocateurForImpLocation.resx">
+      <DependentUpon>ChoisirLocateurForImpLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoisirEntreDeuxDateLocation.resx">
+      <DependentUpon>ChoisirEntreDeuxDateLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoisirParDateLocation.resx">
+      <DependentUpon>ChoisirParDateLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImpEntreDeuxDateLocation.resx">
+      <DependentUpon>ImpEntreDeuxDateLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImpParDateLocation.resx">
+      <DependentUpon>ImpParDateLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationEntreDeuxDateLocation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LocationEntreDeuxDateLocation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationParDateLocation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LocationParDateLocation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifierDispoVoiture.resx">
+      <DependentUpon>ModifierDispoVoiture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoisirVoitureForImpLocation.resx">
+      <DependentUpon>ChoisirVoitureForImpLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImpListeLocateurs.resx">
+      <DependentUpon>ImpListeLocateurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="imploc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>imploc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImpVoitureForLocation.resx">
+      <DependentUpon>ImpVoitureForLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImpressionLocationModifie.resx">
+      <DependentUpon>ImpressionLocationModifie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImprimerLastLocation.resx">
+      <DependentUpon>ImprimerLastLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImpVoitureInDispo.resx">
+      <DependentUpon>ImpVoitureInDispo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LastLoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LastLoc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImpListeVoitures.resx">
+      <DependentUpon>ImpListeVoitures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListeLocateurs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListeLocateurs.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListeVoiture.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListeVoiture.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADM.resx">
+      <DependentUpon>ADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VoitureForLocation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VoitureForLocation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocateurForLocation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LocateurForLocation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locateurs.resx">
+      <DependentUpon>Locateurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginOublie.resx">
+      <DependentUpon>LoginOublie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ML2.resx">
+      <DependentUpon>ML2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NouvelleLocation.resx">
+      <DependentUpon>NouvelleLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RechercherLocateurs.resx">
+      <DependentUpon>RechercherLocateurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifierLocation.resx">
+      <DependentUpon>ModifierLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImprimerLocation.resx">
+      <DependentUpon>ImprimerLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechercherLocation.resx">
+      <DependentUpon>RechercherLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupprimerLocation.resx">
+      <DependentUpon>SupprimerLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechercherVoiture.resx">
+      <DependentUpon>RechercherVoiture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupprimerLocateur.resx">
+      <DependentUpon>SupprimerLocateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupprimerVoiture.resx">
+      <DependentUpon>SupprimerVoiture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImpVoitureDispo.resx">
+      <DependentUpon>ImpVoitureDispo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImpLocateurForLocation.resx">
+      <DependentUpon>ImpLocateurForLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserMenu.resx">
+      <DependentUpon>UserMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilisateurs.resx">
+      <DependentUpon>Utilisateurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VoitureInDispo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VoitureInDispo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VoitureDispo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VoitureDispo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Voitures.resx">
+      <DependentUpon>Voitures.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\572b13cb93322_kkthumb900.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="g.ico" />
+    <Content Include="iconfinder_app_type_rent_a_car_512px_GREY_287483.ico" />
+    <Content Include="Icons8-Ios7-Transport-Cars.ico" />
+    <Content Include="Icons8-Windows-8-Transport-Car.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

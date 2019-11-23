@@ -1,0 +1,164 @@
+Dictionnaire de données 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
+Nom : 
+Code : 
+Type : 
+Taille : ,
+Commentaire : 
+
